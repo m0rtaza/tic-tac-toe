@@ -51,6 +51,10 @@ class TicTacToe:
         
     def check_if_in_cross(self, row, col) -> bool:
         return row == col or row + col == self.n - 1
+
+    def print_board(self):
+        for row in self.board:
+            print(row)
     
 
 import unittest
